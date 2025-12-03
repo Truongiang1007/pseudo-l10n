@@ -141,3 +141,4 @@ vite.config.ts.timestamp-*
 # Example output files (generated)
 examples/output-*.json
 examples/cli-test.json
+examples/test-output.json

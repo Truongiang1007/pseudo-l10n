@@ -23,7 +23,7 @@ Usage:
 Options:
   --expansion=<number>           Text expansion percentage (default: 40)
   --placeholder-format=<format>  Placeholder format (default: "{{key}}")
-                                 Examples: "{{key}}", "{key}", "%key%", "${key}"
+                                 Examples: "{{key}}", "{key}", "%key%", "\${key}"
   --replace-placeholders         Replace placeholders with <UPPERCASE> format
   --start-marker=<string>        Start marker (default: "⟦")
   --end-marker=<string>          End marker (default: "⟧")
